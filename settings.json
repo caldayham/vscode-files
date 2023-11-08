@@ -1,0 +1,44 @@
+{
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.largeFileOptimizations": false,
+    "cSpell.userWords": [
+        "calday",
+        "caldayham",
+        "Isoflurane",
+        "Monkeytype",
+        "stereotaxic"
+    ],
+    "workbench.startupEditor": "none",
+    "css.lint.unknownAtRules": "ignore",
+    "editor.inlineSuggest.enabled": true,
+    "tailwind-fold.autoFold": false,
+    "macros": {
+        "npmRunDev": [
+            "workbench.action.terminal.focus",
+            {
+                "command": "workbench.action.terminal.sendSequence",
+                "args": {
+                    "text": "npm run dev \n"
+                }
+            },
+        ],
+        "ifWrap": [
+            "editor.action.clipboardCutAction",
+            {
+                "command": "editor.action.insertSnippet",
+                "args": {
+                    "name": "iff"
+                }
+            },
+            {
+                "command": "type",
+                "args": {
+                    "text": "true"
+                },
+            },
+            "cursorLineEnd",
+            "cursorDown",
+            "editor.action.clipboardPasteAction"
+        ]
+    }
+}
